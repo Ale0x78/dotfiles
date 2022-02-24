@@ -10,5 +10,3 @@ vim.bo.softtabstop = 2
 
 local keymap = vim.api.nvim_set_keymap
 
-
-" vim.cmd[[colorscheme dracula]]
