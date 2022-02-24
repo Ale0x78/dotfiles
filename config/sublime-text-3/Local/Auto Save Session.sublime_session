@@ -160,38 +160,6 @@
 			},
 			"buffers":
 			[
-				{
-					"file": "/home/starless/dotfiles/config/awesome/rc.lua",
-					"settings":
-					{
-						"buffer_size": 18599,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					},
-					"undo_stack":
-					[
-						[
-							50,
-							1,
-							"insert",
-							{
-								"characters": "--"
-							},
-							"AgAAALEQAAAAAAAAshAAAAAAAAAAAAAAshAAAAAAAACzEAAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAsRAAAAAAAACxEAAAAAAAAAAAAAAAAPC/"
-						],
-						[
-							51,
-							1,
-							"insert",
-							{
-								"characters": " "
-							},
-							"AQAAALMQAAAAAAAAtBAAAAAAAAAAAAAA",
-							"AQAAAAAAAAABAAAAsxAAAAAAAACzEAAAAAAAAAAAAAAAAPC/"
-						]
-					]
-				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -237,11 +205,12 @@
 			},
 			"file_history":
 			[
+				"/home/starless/dotfiles/config/awesome/rc.lua",
 				"/home/starless/dotfiles/config/awesome/themes/default/theme.lua"
 			],
 			"find":
 			{
-				"height": 45.0
+				"height": 33.0
 			},
 			"find_in_files":
 			{
@@ -279,38 +248,6 @@
 				{
 					"sheets":
 					[
-						{
-							"buffer": 0,
-							"file": "/home/starless/dotfiles/config/awesome/rc.lua",
-							"selected": true,
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 18599,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										4056,
-										4056
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Lua/Lua.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 2325.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"stack_multiselect": false,
-							"type": "text"
-						}
 					]
 				}
 			],
@@ -350,7 +287,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,0,0,0,0,1925,65,3830,753,3840,2160,0",
+			"position": "0,0,0,0,0,10,1113,1915,2150,3840,2160,0",
 			"project": "",
 			"replace":
 			{
