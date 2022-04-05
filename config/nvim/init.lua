@@ -4,9 +4,9 @@ require('packer').startup(function()
   use "catppuccin/nvim" as = "catppuccin"
 end)
 
-vim.bo.expandtab = true
-vim.bo.shiftwidth = 2
-vim.bo.softtabstop = 2
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
 vim.o.number = true
 
 
