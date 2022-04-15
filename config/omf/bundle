@@ -1,4 +1,5 @@
 package bang-bang
 package https://github.com/catppuccin/fish
+package pyenv
 theme default
 theme lambda

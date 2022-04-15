@@ -5,6 +5,9 @@ vim.cmd([[
   endif
 ]])
 
+vim.g.sonokai_style = "shusia"
 
-local catppuccin = require("catppuccin")
-
+vim.g.sonokai_better_performance = 1
+vim.cmd[[
+  colorscheme sonokai 
+]]
