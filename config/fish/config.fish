@@ -8,3 +8,4 @@ status --is-interactive; and rbenv init - fish | source
 function fish_greeting
   fortune | cowsay -f flaming-sheep  
 end
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
