@@ -3,7 +3,8 @@ if status is-interactive
 end
 fish_add_path /opt/homebrew/bin
 fish_add_path ~/.bin
-fish_add_path $HOME/.cargo/bin 
+fish_add_path $HOME/.cargo/bin
+fish_add_path /Users/alex/.emacs.d/bin
 status --is-interactive; and rbenv init - fish | source
 alias ibrew='arch -x86_64 /usr/local/bin/brew'
 function fish_greeting
