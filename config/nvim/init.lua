@@ -2,6 +2,7 @@ require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use 'sainnhe/sonokai'
+  use 'Mofiqul/vscode.nvim'
   use 'hrsh7th/nvim-cmp'              -- Autocompletion plugin
   use 'hrsh7th/cmp-nvim-lsp'          -- LSP source for nvim-cmp
   use 'saadparwaiz1/cmp_luasnip'      -- Snippets source for nvim-cmp
