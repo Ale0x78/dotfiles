@@ -1,7 +1,7 @@
 require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-  use 'sainnhe/sonokai'
+  use 'catppuccin/nvim'
   use 'Mofiqul/vscode.nvim'
   use 'hrsh7th/nvim-cmp'              -- Autocompletion plugin
   use 'hrsh7th/cmp-nvim-lsp'          -- LSP source for nvim-cmp
@@ -22,6 +22,7 @@ vim.o.number = true
 
 
 local keymap = vim.api.nvim_set_keymap
+local catppuccin = require("catppuccin")
 
 require('theme')
 require('completion')
