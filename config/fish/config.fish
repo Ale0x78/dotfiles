@@ -7,6 +7,7 @@ fish_add_path $HOME/.cargo/bin
 fish_add_path /Users/alex/.emacs.d/bin
 status --is-interactive; and rbenv init - fish | source
 alias ibrew='arch -x86_64 /usr/local/bin/brew'
+set -x DOCKER_HOST 'unix:///Users/alex/.local/share/containers/podman/machine/podman-machine-default/podman.sock'
 function fish_greeting
   fortune | cowsay -f flaming-sheep  
 end
