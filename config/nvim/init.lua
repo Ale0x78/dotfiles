@@ -1,30 +1,17 @@
-require('packer').startup(function()
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
-  use 'marko-cerovac/material.nvim'
-  use 'Mofiqul/vscode.nvim'
-  use 'hrsh7th/nvim-cmp'              -- Autocompletion plugin
-  use 'hrsh7th/cmp-nvim-lsp'          -- LSP source for nvim-cmp
-  use 'saadparwaiz1/cmp_luasnip'      -- Snippets source for nvim-cmp
-  use 'L3MON4D3/LuaSnip'              -- Snippets plugin
-  use 'sheerun/vim-polyglot'
-  use 'rust-lang/rust.vim'
-  use 'nvim-treesitter/nvim-treesitter'
-  use 'fatih/vim-go'
-  use 'neovim/nvim-lspconfig'         -- LSP configurations
-  use 'alexaandru/nvim-lspupdate'     -- Autoinstall LSP servers
-end)
+local impatient_ok, impatient = pcall(require, "impatient")
+if impatient_ok then impatient.enable_profile() end
 
-vim.opt.expandtab = true
-vim.opt.shiftwidth = 2
-vim.opt.softtabstop = 2
-vim.o.number = true
+for _, source in ipairs {
+  "core.utils",
+  "core.options",
+  "core.bootstrap",
+  "core.plugins",
+  "core.autocmds",
+  "core.mappings",
+  "configs.which-key-register",
+} do
+  local status_ok, fault = pcall(require, source)
+  if not status_ok then vim.api.nvim_err_writeln("Failed to load " .. source .. "\n\n" .. fault) end
+end
 
-
-local keymap = vim.api.nvim_set_keymap
-
-require('material').setup()
-
-require('theme')
-
-require('completion')
+astronvim.conditional_func(astronvim.user_plugin_opts("polish", nil, false))
